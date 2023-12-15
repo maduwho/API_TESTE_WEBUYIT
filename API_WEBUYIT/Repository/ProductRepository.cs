@@ -41,7 +41,7 @@ namespace API_WEBUYIT.Repository
 
         public async Task Update(ProductEntity product)
         {
-            string sql = "@ UPDATE PRODUCT SET Name = @Name, Description = @Description, OriginalPrice = @OriginalPrice, CurrentPrice = @CurrentPrice, Discount = @Discount, Buyers = @Buyers";
+            string sql = "UPDATE PRODUCT SET Name = @Name, Description = @Description, OriginalPrice = @OriginalPrice, CurrentPrice = @CurrentPrice, Discount = @Discount, Buyers = @Buyers";
 
             await Execute(sql, product);
         }
